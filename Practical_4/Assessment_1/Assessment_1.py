@@ -13,7 +13,7 @@ import csv
 
 # ========== (a) Read CSV ==========
 # Read CSV file and get: Employee ID, Name, Department, Sales
-with open('Practical_4/Assessment_1/employee_performance.csv', mode='r') as file:
+with open('Practical_4/Assessment_1/employee_performance.csv', mode='r') as file:  # Update the path to your CSV file
     csv_reader = csv.DictReader(file)
     employee_data = {}
     for row in csv_reader:

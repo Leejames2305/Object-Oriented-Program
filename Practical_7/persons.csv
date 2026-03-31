@@ -1,0 +1,21 @@
+ID,Name,Age,Major,CGPA,YearsExperience
+101,Alice,20,Computer Science,3.8,
+102,Bob,22,Electrical-Electronics Engineering,3.2,
+103,Charlie,21,Mechanical Engineering,1.9,
+104,David,35,Mathematics,,9
+105,Emma,40,Physics,,12
+106,Frank,19,Civil Engineering,1.5,
+107,Grace,23,Software Engineering,3.7,
+108,Hannah,41,Software Engineering,,8
+109,Isaac,48,Civil Engineering,,18
+110,Jack,20,Chemical Engineering,2.8,
+111,Karen,24,Mathematics,3.6,
+112,Liam,22,Mechatronics Engineering,3.1,
+113,Mia,19,Biomedical Engineering,2.8,
+114,Noah,36,Electrical-Electronics Engineering,,5
+115,Olivia,39,Computer Science,,9
+116,Paul,27,Software Engineering,2.5,
+117,Quinn,25,Software Engineering,1.9,
+118,Ryan,40,Software Engineering,,11
+119,Sophia,21,Chemical Engineering,3.3,
+120,Tom,37,English,,10

@@ -80,8 +80,8 @@ def delivery_statistics_by_distance_category(orders):
         if delivery_fees:  # Only calculate if there is at least one order in the category
             average_delivery_fees = sum(delivery_fees) / len(delivery_fees)
             print(f"{category}")
-            print(f"Total Orders = {len(delivery_fees)}")
-            print(f"Average Delivery Price = RM {average_delivery_fees:,.2f}")
+            print(f"Total Orders: {len(delivery_fees)}")
+            print(f"Average Delivery Price: RM {average_delivery_fees:,.2f}")
             print()
         else:
             print(f"{category}: No orders")
@@ -108,7 +108,7 @@ def get_order_by_id(orders, order_id):
 
 
 #### Main Execution ####
-orders = load_data("Practical_7/Assessment_2/oop_food_orders.csv")
+orders = load_data("Practical_7/Assessment_2/oop_food_orders.csv")  # Update the file path as needed 
 delivery_statistics_by_distance_category(orders)
 top_3_customers_by_spending(orders)
 get_order_by_id(orders, "O001")

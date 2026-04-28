@@ -13,6 +13,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the csv datasets and merge them
+# Change the file paths if necessary
 df1 = pd.read_csv('sales_q1.csv')
 df2 = pd.read_csv('sales_q2.csv')
 df3 = pd.read_csv('sales_q3.csv')
@@ -54,17 +55,18 @@ plt.xlabel('Price')
 plt.ylabel('Frequency')
 plt.grid(axis='y', alpha=0.5)
 plt.grid(axis='x', alpha=0.5)
-plt.show()
 
 # Line Chart showing total revenue by month (Jan-Dec), Display value for each month clearly
 df['month'] = pd.to_datetime(df['date']).dt.month
 monthly_revenue = df.groupby('month')['revenue'].sum().reset_index()
+months_name = {1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'May', 6: 'Jun', 7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Oct', 11: 'Nov', 12: 'Dec'}
+monthly_revenue['month'] = monthly_revenue['month'].map(months_name)
+
 plt.figure(figsize=(10, 6))
 plt.plot(monthly_revenue['month'], monthly_revenue['revenue'], marker='o', color='orange')
 plt.title('Total Revenue by Month')
 plt.xlabel('Month')
 plt.ylabel('Total Revenue')
-plt.xticks(range(1, 13))
 plt.grid(axis='y', alpha=0.5)
 plt.grid(axis='x', alpha=0.5)
 for i, value in enumerate(monthly_revenue['revenue']):
